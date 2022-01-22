@@ -1,13 +1,16 @@
 import "../styles/Card.scss";
 const Card = ({ title, type, price, img, isAvailable, onSale }) => {
   return (
-    <article
-      className={`flex column centrado card ${
-        isAvailable === false && ".background-color-grey"
-      }`}
-    >
+    <div>
+      {isAvailable === false && (<span className="flex centrado posicion-relativa">SIN STOCK</span>)}
+      <article
+      className='flex column centrado card'
+    > 
+
       <div className="contenedor-imagen">
-        <img className="imagen" src={img} alt=""></img>
+        <img className={`imagen ${
+        isAvailable === false && "opacidad"
+      }`} src={img} alt=""></img>
         <div className="flex">
           <div className="contenedor-nombre-tipo flex column derecha">
             <h3 className="nombre-producto">{title}</h3>
@@ -22,6 +25,8 @@ const Card = ({ title, type, price, img, isAvailable, onSale }) => {
         </div>
       </div>
     </article>
+    </div>
+    
   );
 };
 

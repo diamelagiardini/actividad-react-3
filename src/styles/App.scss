@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.centrado {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.derecha{
+  align-items: flex-start;
+}
+
+.izquierda{
+  align-items: flex-end;
+}
+

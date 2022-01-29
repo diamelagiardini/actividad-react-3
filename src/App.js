@@ -69,6 +69,7 @@ const products = [
 ];
 
 const App = () => {
+
   return (
     <section className="seccion flex centrado">
       <div className="flex wrap">
@@ -83,6 +84,7 @@ const App = () => {
           />
         ))}
       </div>
+
     </section>
   );
 };
